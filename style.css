@@ -45,9 +45,28 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  transition: 0.3s all;
 }
 
-.btn {
+nav ul li a:hover {
+  color: #f5168d;
+}
+
+.hover-line::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #f5168d;
+  transition: width 0.3;
+}
+
+.hover-line:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+button {
   display: flex;
   align-items: center;
   padding: 2.5px 5px;
@@ -60,9 +79,15 @@ nav ul li a {
   cursor: pointer;
 }
 
-.btn img {
-  margin-right: 10px;
+button:hover {
+  border-bottom: 2px solid #f5168d;
+  background-color: transparent;
+  transition: all 0.3s;
 }
+
+/* .btn img {
+  margin-right: 10px;
+} */
 
 .content {
   margin-top: 10px;
