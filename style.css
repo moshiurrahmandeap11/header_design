@@ -70,6 +70,17 @@ nav ul li a:hover {
   transition: width 0.3s;
 }
 
+.btn {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
+
 button {
   display: flex;
   align-items: center;
